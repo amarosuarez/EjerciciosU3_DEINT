@@ -12,7 +12,16 @@
             <ColumnDefinition Width="161*"/>
         </Grid.ColumnDefinitions>
         <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="224,202,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
+        <TextBox x:Name="nombreTB" Grid.Column="1" HorizontalAlignment="Left" Margin="184,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="apellidoTB" Grid.Column="1" HorizontalAlignment="Left" Margin="184,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="184,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Nombre"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="184,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Apellido"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="diaTB" PreviewTextInput="NumberValidationTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="145,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="mesTB" PreviewTextInput="NumberValidationTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="223,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="anioTB" PreviewTextInput="NumberValidationTextBox" Grid.Column="1" HorizontalAlignment="Center" Margin="0,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="144,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Día"/><LineBreak/><Run/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="227,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Mes"/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="301,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Año"/></TextBlock>
 
     </Grid>
 </Window>
