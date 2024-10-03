@@ -56,24 +56,8 @@ Public Class Form1
             cumple = DateTime.Parse(fecha)
 
             Dim persona As New Persona(nombre, apellidos, cumple)
-            Dim Msg, Style, Title, Help, Ctxt, Response
 
-            Msg = "Naciste el " + persona.FechaNac.ToLongDateString
-
-            ' Define message.
-            Style = vbDefaultButton2    ' Define buttons.
-            Title = "Hola, " + persona.Nombre + " " + persona.Apellido    ' Define title.
-            Help = "DEMO.HLP"    ' Define Help file.
-            Ctxt = 1000    ' Define topic context. 
-            ' Display message.
-            Response = MsgBox(Msg, Style, Title)
-
-            ' Opcionalmente, puedes manejar la respuesta del usuario
-            If Response = vbYes Then
-                ' Código para continuar
-            Else
-                ' Código si se selecciona "No"
-            End If
+            MessageBox.Show("Naciste el " + persona.FechaNac.ToLongDateString, "Hola " + persona.Nombre + " " + persona.Apellido, MessageBoxButtons.OK)
         Else
             MessageBox.Show("Por favor, comprueba los campos y la fecha.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
